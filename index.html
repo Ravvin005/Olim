@@ -1,35 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Sayt</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Olim</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Web Sayt</h1>
-    <nav>
-      <ul>
-        <li><a href="matematika.html">Matematika</a></li>
-        <li><a href="fizika.html">Fizika</a></li>
-        <li><a href="tilshunoslik.html">Tilshunoslik</a></li>
-        <li><a href="informatika.html">Informatika</a></li>
-        <li><a href="geografiya.html">Geografiya</a></li>
-        <li><a href="tarix.html">Tarix</a></li>
-      </ul>
-    </nav>
+    <button class="nav-btn">
+      <img src="style/images/nav.png" alt="Navigation" width="38" height="35">
+      <div class="dropdown">
+        <a href="#">Sozlamalar</a>
+        <a href="#">Yordam</a>
+        <a href="#">About</a>
+      </div>
+    </button>
+    <h1 class="headText"><img src="./style/images/Olim.png" alt="Olim" style="width: 100%; height: 120px;"></h1>
+    <a href="logn.html">
+    <button class="user-btn" >
+      <img src="style/images/user.svg" alt="User" width="67" height="67">
+    </button>
+    </a>
   </header>
 
   <main>
-    <h2>Xush kelibsiz!</h2>
-    <p>Bu web-sayt turli fan sohalari bo'yicha ma'lumotlar taqdim etadi.</p>
+    <div class="main-div">
+      <button class="subject-btn IT"><h3>IT Savodxonligi</h3></button>
+      <button class="subject-btn Matematika"><h3>Matematika</h3></button>
+    </div>
+    <div class="main-div">
+      <button class="subject-btn Fizika"><h3>Fizika</h3></button>
+      <button class="subject-btn Kimyo">Kimyo</button>
+    </div>
+    <div class="main-div">
+      <button class="subject-btn Tilshunoslik">Tilshunoslik</button>
+      <button class="subject-btn Tarix"><h3>Tarix</h3></button>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2024 Web Sayt. Barcha huquqlar himoyalangan.</p>
-  </footer>
+  <div class="container">
+    <div class="row">
+      <div class="column">Birinchi element</div>
+      <div class="column">Ikkinchi element</div>
+    </div>
+    <div class="row">
+      <div class="column">Uchinchi element</div>
+      <div class="column">To'rtinchi element</div>
+    </div>
+    <div class="row">
+      <div class="column">Beshinchi element</div>
+      <div class="column">Oltinchi element</div>
+    </div>
+  </div>
 
-  <script src="script.js"></script>
+  <script src="script/script.js"></script>
 </body>
 </html>
